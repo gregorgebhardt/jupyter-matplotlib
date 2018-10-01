@@ -105,7 +105,7 @@ class NavigationIPy(NavigationToolbar2WebAgg):
 
     def export(self):
         buf = io.BytesIO()
-        self.canvas.figure.savefig(buf, format='png', dpi='figure')
+        self.canvas.figure.savefig(buf)
         # Figure width in pixels
         pwidth = self.canvas.figure.get_figwidth() * self.canvas.figure.get_dpi()
         # Scale size to match widget on HiPD monitors
